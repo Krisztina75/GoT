@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+@font-face {
+    font-family: myGoTFont;
+    src: url(/fonts/Game\ of\ Thrones.ttf);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    font-family: myGoTFont;
+}
+
+.listOfCharacters {
+    background-image: url(/assets/site/mapblue.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    justify-content: space-evenly;
+    width: 80vw;
+}
+
+.active,
+img:hover {
+    background: #F4A460;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.characters {
+    float: left;
+    font-size: 6px;
+    height: 14vh;
+    margin: 5px;
+    text-align: center;
+    width: 9vw;
+}
+
+img {
+    height: 70%;
+    width: 50%;
+}
+
+.search {
+    background-color: #555;
+    height: 100vh;
+    width: 20vw;
+}
+
+.title {
+    color: #fff;
+    font-size: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+.found {
+    color: #fff;
+    font-family: Arial, Helvetica;
+    height: 60vh;
+    margin: 20px;
+    width: 18vw;
+}
+
+.picture {
+    height: 100%;
+    width: 100%;
+}
+
+.name {
+    padding-bottom: 10px;
+    position: relative;
+    height: 40px;
+    top: 5px;
+}
+
+.ikon {
+    height: 100%;
+    padding: 6px;
+    position: absolute;
+    right: 0;
+    width: 15%;
+}
+
+.bio {
+    font-size: 12px;
+    overflow: auto;
+}
+
+.searchingArea {
+    position: relative;
+    top: 150px;
+}
+
+#searchBox {
+    border-radius: 3px;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    width: 15vw;
+    height: 3vh;
+}
